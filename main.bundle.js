@@ -306,7 +306,7 @@
 
 	'use strict';
 
-	var baseURL = 'https://qs-rails-1.herokuapp.com'
+	var baseURL = __webpack_require__(2).baseURL();
 
 	var foodsAPIFetch = function foodsAPIFetch(id, method, body) {
 	  return fetch(baseURL + '/api/v1/foods/' + id, {
@@ -414,7 +414,7 @@
 	  if (host === "localhost" || host === "127.0.0.1") {
 	    return "http://localhost:3000";
 	  } else {
-	    return 'https://qs-rails-1.herokuapp.com';
+	    return "https://qs-rails-mine.herokuapp.com";
 	  }
 	};
 
