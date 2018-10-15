@@ -414,7 +414,9 @@
 	  if (host === "localhost" || host === "127.0.0.1") {
 	    return "http://localhost:3000";
 	  } else {
-	    return "https://qs-rails-mine.herokuapp.com";
+	    // return 'https://qs-go-mine.herokuapp.com/'
+	    // return 'https://qs-express-mine.herokuapp.com/'
+	    return 'https://qs-rails-mine.herokuapp.com';
 	  }
 	};
 
@@ -433,6 +435,9 @@
 	var baseURL = __webpack_require__(2).baseURL();
 
 	var mealsAPIFetch = function mealsAPIFetch(id, method, extension) {
+	  console.log(id);
+	  console.log(method);
+	  console.log(extension);
 	  return fetch(baseURL + '/api/v1/meals/' + id + extension, {
 	    method: method
 	  });
