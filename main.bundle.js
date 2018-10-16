@@ -414,9 +414,7 @@
 	  if (host === "localhost" || host === "127.0.0.1") {
 	    return "http://localhost:3000";
 	  } else {
-	    // return 'https://qs-go-mine.herokuapp.com/'
-	    // return 'https://qs-express-mine.herokuapp.com/'
-	    return 'https://qs-rails-mine.herokuapp.com';
+	    return 'https://qs-express-mine.herokuapp.com/';
 	  }
 	};
 
